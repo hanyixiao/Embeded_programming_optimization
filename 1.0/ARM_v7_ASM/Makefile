@@ -1,3 +1,4 @@
+target: bubble_sort bubble_sort_asm
 bubble_sort:	
 	gcc bubble_sort.c -o3 -o bubble_sort
 bubble_sort_asm:
