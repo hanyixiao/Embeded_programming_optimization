@@ -6,18 +6,16 @@
  * hanyixiao@github.com
  * target arm-v7a rasbberypi-4B
  *******************************************************************************/      
-     N,32768
-     data,N*4,4
     .global bubble_sort_asm
     .arch armv7-a
     .type bubble_sort_asm,%function
-bubble_sort_asm:   ldr r1,=N
+bubble_sort_asm:   
         sub r1,r1,#1 @r1 = N-1
         mov r5,#0    @i=0
 oloop:  cmp r5,r1    @i==N-1?
         beq exito
         mov r3,#0    @j=0
-        ldr r2,=data @r2=data
+        mov r2,r0 @r2=data
         ldr r11,[r2] 
 iloop:  cmp r3,r1    @j==N-1?
         beq exiti
