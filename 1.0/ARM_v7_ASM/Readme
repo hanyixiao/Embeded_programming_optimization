@@ -1,3 +1,18 @@
 This is a program to test the source code of book Embedded System ARM Programming & Optimization
 the 1st class
 use the asm to Optimiza the code of bubble sort
+
+by using the asm to Optimizate the code, we can easily save the time.my platform is raspberrtpi 
+4B 1G RAM
+
+
+~/Downloads/Embeded_programming_optimization/1.0/ARM_v7_ASM $ time ./bubble_sort
+
+real	0m7.220s
+user	0m7.219s
+sys	0m0.000s
+pi@raspberrypi:~/Downloads/Embeded_programming_optimization/1.0/ARM_v7_ASM $ time ./bubble_sort_asm 
+
+real	0m2.192s
+user	0m2.192s
+sys	0m0.000s
