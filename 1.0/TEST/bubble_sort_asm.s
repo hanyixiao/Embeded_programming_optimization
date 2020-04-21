@@ -6,6 +6,8 @@
  * hanyixiao@github.com
  * target arm-v7a rasbberypi-4B
  *******************************************************************************/      
+     N,32768
+     data,N*4,4
     .global bubble_sort_asm
     .arch armv7-a
     .type bubble_sort_asm,%function
