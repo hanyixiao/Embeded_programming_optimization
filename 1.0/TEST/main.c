@@ -9,8 +9,8 @@
  #include <stdlib.h>
 #define N 32768
 
-int buble_sort(int *data,int n);
-int buble_sort_asm(int *data,int n);
+int bubble_sort(int *data,int n);
+int bubble_sort_asm(int *data,int n);
 
 int main(int argc,char **argv)
 {
